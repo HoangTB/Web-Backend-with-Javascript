@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDEX</title>
+  <style>
+    * {
+      border-collapse: collapse;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav {
+      width: 100%;
+      height: 40px;
+      background-color: black;
+
+    }
+
+    ul {
+      display: flex;
+      height: 40px;
+      gap: 20px;
+      align-items: center;
+      padding-left: 10px;
+    }
+
+    ul li {
+      list-style-type: none;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .question-content {
+      margin-top: 50px;
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .main-content {
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-group {
+      margin-top: 100px;
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+    }
+
+    #dislike {
+      background-color: red;
+      color: white;
+      border: none;
+      height: 40px;
+      border-radius: 5px;
+      padding: 5px 10px 5px 10px;
+    }
+
+    #like {
+      background-color: blue;
+      color: white;
+      border: none;
+      height: 40px;
+      border-radius: 5px;
+      padding: 5px 10px 5px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="logo"><a href="#">Hỏi.MịeĐê!</a></li>
+      <li><a href="/ask">Hỏi nhanh</a></li>
+      <li><a href="/">Đáp gọn</a></li>
+    </ul>
+  </nav>
+  <section class="main-content">
+    <div class="question-content">
+      Some questions????
+    </div>
+    <div class="btn-group">
+      <button class="btn" id="dislike" onclick="disLike()">Sai/Không/Dislike</button>
+      <button class="btn" id="like" onclick="like()">Đúng/Có/Like</button>
+    </div>
+  </section>
+  <script src="./index.js"></script>
+</body>
+
+</html>
